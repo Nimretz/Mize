@@ -2,7 +2,7 @@ import argparse
 import threading
 import subprocess
 from collections import defaultdict
-
+#formerly known as malshin.py
 #returns A and NS records from file containing list of domains (together ANS [answer])
 def run_dig(domain, results):
     a_records = []
