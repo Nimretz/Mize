@@ -1,5 +1,7 @@
 import sys
-#remove contents of file1 in file2 - removing lines in file2 that are in file1, to remove sites that are not relevant from the scope
+#remove contents of file1 in file2 - removing lines in file2 that are in file1
+#remove sites that are not relevant from the scope
+#remove users caught in spray from the user list
 def compare_and_save(file1, file2, output_file):
     with open(file1, 'r') as f1, open(file2, 'r') as f2:
         lines_to_remove = set(line.strip() for line in f1)
